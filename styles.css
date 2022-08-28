@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-BLack";
+  src: url(fonts/Poppins-Black.ttf);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 100%;
+}
+
+/* HEADER SECTION */
+header {
+  /* height: 80vh; */
+  background-color: hsl(192, 100%, 96%);
+  background-image: url(images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 3rem;
+}
+
+.header-logo-box {
+  width: 30%;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+.btn {
+  padding: 1rem 5rem;
+  border-radius: 4rem;
+  border-style: none;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-family: "Poppins-BLack";
+}
+
+.white-btn {
+  background-color: white;
+  color: black;
+}
+
+.pink-btn {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+}
+
+.header-text-image-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 3rem;
+  justify-content: space-between;
+  min-height: fit-content;
+  grid-gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.header-image-box {
+  background-image: url(images/illustration-mockups.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+}
+
+.header-text-box {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 50%;
+}
+
+.header-heading {
+  font-family: "Poppins-Black";
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header-paragraph {
+  font-family: "OpenSans-Light";
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* ABOUT SECTION */
+main.about {
+  /* height: 100vh; */
+  padding: 10rem 3rem 15rem 3rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.about-card {
+  width: 100%;
+  padding: 7rem 2rem 7rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.182),
+    0 -0.2rem 0.4rem rgba(0, 0, 0, 0.182);
+}
+
+.about-image-box {
+  width: 30%;
+  height: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* float: right; */
+}
+
+.about-images {
+  width: 100%;
+}
+
+.about-card-text {
+  padding-top: 3rem;
+  width: 40%;
+}
+
+.about-heading {
+  font-family: "Poppins-Black";
+  font-size: 2rem;
+}
+
+.about-paragraph {
+  font-family: "OpenSans-Light";
+  font-size: 1.8rem;
+}
+
+/* FOOTER */
+footer {
+  padding-left: 4rem;
+  padding-right: 7rem;
+  width: 100%;
+  /* height: 10px; */
+  padding-top: 15rem;
+  padding-bottom: 8rem;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  font-family: "OpenSans-Light";
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: -150;
+}
+
+.telephone-email-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row: 2/3;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 35rem repeat(2, 1fr) 11rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+  min-width: 80%;
+}
+
+.footer-icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+.career-blog-contact-box {
+  grid-row: 1 / 2;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-faq {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.footer-paragraph {
+  grid-row: 1/2;
+  grid-column: 1 / 2;
+}
+
+.footer-what-we-do-box {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-contact-us {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.footer-icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-logo-box {
+  width: 15%;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+main.about {
+  padding-bottom: 5rem;
+}
+
+.build-community {
+  width: 50rem;
+  background-color: white;
+  transform: translateY(40%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.build-community-heading {
+  font-family: "Poppins-Black";
+  font-size: 2.5rem;
+  text-align: center;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+}
+
+.btn-card {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  /* width: 100%;
+  justify-content: center; */
+}
+@media screen and (max-width: 760px) {
+  header {
+    padding-inline: 0.5rem;
+    background-image: url(images/bg-hero-mobile.svg);
+    min-height: fit-content;
+  }
+
+  .white-btn {
+    padding: 1rem 1rem;
+  }
+
+  .header-text-image-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* .header-image-box {
+    width: 80%;
+    height: 90%;
+    background-image: url(images/illustration-mockups.svg);
+  } */
+
+  .about-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .about-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .flowing-convo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .about-paragraph {
+    text-align: center;
+  }
+
+  .about-card-text {
+    width: 80%;
+    padding-inline: 0;
+    padding-top: 0;
+  }
+
+  .about-image-box {
+    width: 95%;
+  }
+
+  .about-images {
+    width: 100%;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .build-community {
+    width: 90%;
+  }
+
+  .build-community-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-icon-box {
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    margin-left: 3rem;
+  }
+}
